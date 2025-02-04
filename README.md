@@ -35,7 +35,7 @@ The [datasets](https://www.kaggle.com/datasets/computingvictor/transactions-frau
 
 #### ****1. Data Cleaning and Preparation:****
 
-* **Sampling:** Sampled 8,000 data points from 8,914,963 transactions due to Excel's limitations. Since only 0.15% of transactions were flagged as fraudulent, oversampling was performed to include 400 fraud transactions. After cleaning, 41 fraudulent transactions remained.
+* **Sampling:** Sampled 8,000 data points from 8,914,963 transactions due to Excel's limitations. Since only 0.15% of transactions were flagged as fraudulent, oversampling was performed using python to include 400 fraud transactions. After cleaning, 41 fraudulent transactions remained.
 * **Remove Duplicates:** Used Excel’s Remove Duplicates feature to eliminate 7 duplicate rows.
 * **Handle Missing Values:** Removed rows with missing values, resulting in a cleaned dataset of 6,693 rows.
 * **Format Data:** Ensured consistent data formats across all columns.
