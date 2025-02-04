@@ -6,7 +6,7 @@ To analyze transaction data, identify patterns and trends, and determine key ind
 
 ### ****Dataset Overview:****
 
-The datasets were collected from Kaggle and include the following:
+The [datasets](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data) were collected from Kaggle and include the following:
 
 * **transactions\_data.csv**: Transaction-level data.
 * **mcc\_codes.json**: Merchant category codes for mapping.
@@ -36,7 +36,7 @@ The datasets were collected from Kaggle and include the following:
 #### ****1. Data Cleaning and Preparation:****
 
 * **Sampling:** Sampled 8,000 data points from 8,914,963 transactions due to Excel's limitations. Since only 0.15% of transactions were flagged as fraudulent, oversampling was performed to include 400 fraud transactions. After cleaning, 41 fraudulent transactions remained.
-* **Remove Duplicates:** Used Excel’s **Remove Duplicates** feature to eliminate 7 duplicate rows.
+* **Remove Duplicates:** Used Excel’s Remove Duplicates feature to eliminate 7 duplicate rows.
 * **Handle Missing Values:** Removed rows with missing values, resulting in a cleaned dataset of 6,693 rows.
 * **Format Data:** Ensured consistent data formats across all columns.
 * **Replace Binary Values:** Used =IF to replace "Yes" with 1 and "No" with 0 in binary columns.
@@ -77,22 +77,19 @@ The datasets were collected from Kaggle and include the following:
 
 ### ****Key Findings:****
 
-1. **Fraud Rate:** Out of 6,692 transactions, 41 were fraudulent, with an average fraud amount of **104.72∗∗*comparedto*∗∗64.33** for non-fraudulent transactions.
-
-104.72∗∗comparedto∗∗
-
-1. **High-Risk Merchant Categories:** The top categories with the highest fraud rates include:
+1. **Fraud Rate:** Out of 6,692 transactions, 41 were fraudulent, with an average fraud amount of **104.72** compared to **64.33** for non-fraudulent transactions.
+2. **High-Risk Merchant Categories:** The top categories with the highest fraud rates include:
    * Wholesale Clubs (26.83%).
    * Discount Stores (9.76%).
    * Grocery Stores and Supermarkets (7.32%).
    * Drug Stores and Pharmacies (7.32%).
-2. **High-Risk Locations:** States with the highest fraud rates are **Ohio (OH)**, **California (CA)**, **Pennsylvania (PA)**, and **Florida (FL)**.
-3. **Transaction Type:** Swipe transactions accounted for **78.05%** of fraudulent transactions.
-4. **Time-Based Trends:**
+3. **High-Risk Locations:** States with the highest fraud rates are **Ohio (OH)**, **California (CA)**, **Pennsylvania (PA)**, and **Florida (FL)**.
+4. **Transaction Type:** Swipe transactions accounted for **78.05%** of fraudulent transactions.
+5. **Time-Based Trends:**
    * Fraudulent activity peaked in **August** and **June**.
    * The highest fraud rates occurred on **Tuesdays** and **Thursdays**.
    * The average fraud amount increased significantly from **2012 to 2018**, while no fraud was detected in other years (likely due to limited data).
-5. **Customer Analysis:** Identified top customers involved in fraudulent transactions, providing actionable insights for further investigation.
+6. **Customer Analysis:** Identified top customers involved in fraudulent transactions, providing actionable insights for further investigation.
 
 ### ****Actionable Recommendations:****
 
