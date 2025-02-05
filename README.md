@@ -2,7 +2,7 @@
 
 #### ****Objective:****
 
-To analyze transaction data, identify patterns and trends, and determine key indicators of fraudulent transactions using the fraudornot column as the target variable.
+To analyze financial transaction data, identify patterns and trends, and determine key indicators of fraudulent transactions using the fraudornot column as the target variable.
 
 ### ****Dataset Overview:****
 
